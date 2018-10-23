@@ -1,0 +1,8 @@
+Bludit ported the theme Mediumish by WowThemes.net
+
+Template Name: Mediumish
+Copyright: WowThemes.net, https://www.wowthemes.net, WOW DEVELOPMENT, Bucharest
+Version: 1.0.0
+https://www.wowthemes.net/mediumish-free-bootstrap-4-0-html-template-medium-styled/
+
+License https://www.wowthemes.net/freebies-license/
