@@ -20,3 +20,6 @@ Mediumish is a Bludit theme like Medium. Similar look and feel, Mediumish is the
 
 ## License
 - Freebies License. https://www.wowthemes.net/freebies-license/
+
+## Screenshot
+![screenshot-clean-blog](https://github.com/bludit-themes/mediumsh/raw/master/screenshot.png)
