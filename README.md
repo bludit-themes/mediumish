@@ -22,4 +22,4 @@ Mediumish is a Bludit theme like Medium. Similar look and feel, Mediumish is the
 - Freebies License. https://www.wowthemes.net/freebies-license/
 
 ## Screenshot
-![screenshot-clean-blog](https://github.com/bludit-themes/mediumsh/raw/master/screenshot.png)
+![screenshot-clean-blog](https://raw.githubusercontent.com/bludit-themes/mediumish/master/screenshot.png)
