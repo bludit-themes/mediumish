@@ -1,4 +1,3 @@
-
 <!-- Begin Article
 ================================================== -->
 <div class="container">
@@ -24,6 +23,9 @@
 		</div>
 		<!-- End Fixed Left Share -->
 
+		<!-- Load Bludit Plugins: Page Begin -->
+		<?php Theme::plugins('pageBegin'); ?>
+
 		<!-- Begin Post -->
 		<div class="col-md-8 col-md-offset-2 col-xs-12">
 			<div class="mainheading">
@@ -36,11 +38,11 @@
 				</div>
 			</div>
 
+			<!-- Begin Cover Image -->
 			<?php if ($page->coverImage()): ?>
-			<!-- Begin Featured Image -->
-			<img class="featured-image img-fluid" src="<?php echo $page->coverImage(); ?>" alt="Cover Image">
-			<!-- End Featured Image -->
+			<img class="featured-image img-fluid" src="<?php echo $page->coverImage(); ?>" alt="<?php echo $page->title(); ?>">
 			<?php endif ?>
+			<!-- End Cover Image -->
 
 			<!-- Begin Post Content -->
 			<div class="article-post">
@@ -49,6 +51,7 @@
 			<!-- End Post Content -->
 
 			<!-- Begin Tags -->
+			<?php if (!empty($page->tags(true))): ?>
 			<div class="after-post-tags">
 				<ul class="tags">
 					<?php foreach ($page->tags(true) as $tagKey=>$tagName): ?>
@@ -56,10 +59,13 @@
 					<?php endforeach ?>
 				</ul>
 			</div>
+			<?php endif; ?>
 			<!-- End Tags -->
-
 		</div>
 		<!-- End Post -->
+
+		<!-- Load Bludit Plugins: Page End -->
+		<?php Theme::plugins('pageEnd'); ?>
 
 	</div>
 
@@ -81,4 +87,3 @@
 </div>
 <!-- End Article
 ================================================== -->
-

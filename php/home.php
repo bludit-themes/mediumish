@@ -26,9 +26,6 @@
 		?>
 		<!-- begin post -->
 		<div class="card">
-			<!-- Load Bludit Plugins: Page Begin -->
-			<?php Theme::plugins('pageBegin'); ?>
-
 			<div class="row">
 				<div class="col-md-5 wrapthumbnail">
 					<a href="<?php echo $page->permalink(); ?>">
@@ -55,9 +52,6 @@
 					</div>
 				</div>
 			</div>
-
-			<!-- Load Bludit Plugins: Page End -->
-			<?php Theme::plugins('pageEnd'); ?>
 		</div>
 		<!-- end post -->
 		<?php endforeach ?>
@@ -84,11 +78,11 @@
 			</a>
 			<div class="card-block p-3">
 				<h2 class="card-title"><a href="<?php echo $page->permalink(); ?>"><?php echo $page->title(); ?></a></h2>
-				<h4 class="card-text"><?php echo (empty($page->description())?'Complete the description of the article for a correct work of the theme':$page->description()) ?></h4>
+				<h4 class="card-text"><?php echo (empty($page->description())?$language->p('Complete the description of the article'):$page->description()) ?></h4>
 				<div class="metafooter">
 					<div class="wrapfooter">
 						<span class="meta-footer-thumb">
-						<img class="author-thumb" src="<?php echo ($page->user('profilePicture')?$page->user('profilePicture'):Theme::src('img/noimage.png')) ?>" alt="Author">
+						<img class="author-thumb" src="<?php echo ($page->user('profilePicture')?$page->user('profilePicture'):Theme::src('img/noimage.png')) ?>" alt="<?php echo $page->user('nickname') ?>">
 						</span>
 						<span class="author-meta">
 						<span class="post-name"><?php echo $page->user('nickname'); ?></span><br/>
