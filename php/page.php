@@ -23,11 +23,12 @@
 		</div>
 		<!-- End Fixed Left Share -->
 
-		<!-- Load Bludit Plugins: Page Begin -->
-		<?php Theme::plugins('pageBegin'); ?>
-
 		<!-- Begin Post -->
 		<div class="col-md-8 col-md-offset-2 col-xs-12">
+
+			<!-- Load Bludit Plugins: Page Begin -->
+			<?php Theme::plugins('pageBegin'); ?>
+
 			<div class="mainheading">
 				<h1 class="posttitle"><?php echo $page->title(); ?></h1>
 				<div class="wrapfooter">
@@ -61,11 +62,12 @@
 			</div>
 			<?php endif; ?>
 			<!-- End Tags -->
+
+			<!-- Load Bludit Plugins: Page End -->
+			<?php Theme::plugins('pageEnd'); ?>
+
 		</div>
 		<!-- End Post -->
-
-		<!-- Load Bludit Plugins: Page End -->
-		<?php Theme::plugins('pageEnd'); ?>
 
 	</div>
 
