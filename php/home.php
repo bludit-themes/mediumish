@@ -101,6 +101,20 @@
 	<!-- End List Posts
 	================================================== -->
 
+	<?php if (Paginator::numberOfPages()>1): ?>
+	<nav aria-label="Page navigation example">
+		<ul class="pagination justify-content-center">
+			<?php if (Paginator::showPrev()): ?>
+			<li class="page-item"><a class="page-link" href="<?php echo Paginator::previousPageUrl() ?>" tabindex="-1">&#9664; <?php $language->p('Previous page') ?></a></li>
+			<?php endif ?>
+
+			<?php if (Paginator::showNext()): ?>
+			<li class="page-item"><a class="page-link" href="<?php echo Paginator::nextPageUrl() ?>"><?php $language->p('Next page') ?> &#9658;</a></li>
+			<?php endif ?>
+		</ul>
+	</nav>
+	<?php endif ?>
+
 	<!-- Begin Footer
 	================================================== -->
 	<div class="footer">
