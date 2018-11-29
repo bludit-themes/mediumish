@@ -29,8 +29,7 @@
 			<div class="row">
 				<div class="col-md-5 wrapthumbnail">
 					<a href="<?php echo $page->permalink(); ?>">
-						<div class="thumbnail" style="background-image:url(<?php echo ($page->coverImage()?$page->coverImage():Theme::src('img/noimage.png')) ?>);">
-						</div>
+						<div class="thumbnail" style="background-image:url(<?php echo ($page->coverImage()?$page->coverImage():Theme::src('img/noimage.png')) ?>);"></div>
 					</a>
 				</div>
 				<div class="col-md-7">
@@ -74,7 +73,7 @@
 		<!-- begin post -->
 		<div class="card">
 			<a href="<?php echo $page->permalink(); ?>">
-				<img class="img-fluid" src="<?php echo ($page->coverImage()?$page->coverImage():Theme::src('img/noimage.png')) ?>" alt="">
+				<div style="background-image:url(<?php echo ($page->coverImage()?$page->coverImage():Theme::src('img/noimage.png')) ?>); background-size: cover; background-position: center; width:100%; height:250px;"></div>
 			</a>
 			<div class="card-block p-3">
 				<h2 class="card-title"><a href="<?php echo $page->permalink(); ?>"><?php echo $page->title(); ?></a></h2>
